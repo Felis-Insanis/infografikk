@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .App-logo {
@@ -35,4 +37,50 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1.0s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+  display: flex;
+  align-items: center;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+header {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h1 {
+  font-family:'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+
+.norge {
+  color: rgb(46, 49, 146);
+}
+
+.qatar {
+  color: rgb(142, 50, 77);
+}
+
+.flavorText {
+  font-family:'Times New Roman', Times, serif;
+  width: 45%;
+  text-align: left;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.space-inbetween {
+  padding-bottom: 10%;
 }
